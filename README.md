@@ -1,1 +1,24 @@
-# rpext
+# Instruction
+
+To use with tinycore-redpill:
+
+```bash
+
+sudo ./rploader.sh clean bromolow-7.0.1-42218
+
+sudo ./rploader.sh update now
+
+./rploader.sh ext bromolow-7.0.1-42218 add https://github.com/jimmyGALLAND/redpill-ext/raw/master/acpid/rpext-index.json
+
+find . -name "*json" -exec grep -l "jumkey/redpill-load/raw/develop/redpill-virtio" {} \; | xargs -I {} sed -i "s/jumkey\/redpill-load\/raw\/develop\/redpill-virtio/uxora-com\/rpext\/raw\/master\/virtio_9p/g" {}
+
+sudo ./rploader.sh build bromolow-7.0.1-42218
+
+```
+
+
+
+# Source
+https://github.com/pocopico/tinycore-redpill
+https://github.com/pocopico/rp-ext
+https://github.com/jimmyGALLAND/redpill-ext
