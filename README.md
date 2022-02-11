@@ -1,6 +1,7 @@
 # Instruction
 
-To compile redpill bootloader with virtio, 9p and acpid.
+To compile redpill bootloader with virtio, 9p and acpid that can be run in xpenology-docker.
+
 Run tinycore-redpill loader on kvm/proxmox with at least 1GB RAM, then type these commands:
 
 ```bash
@@ -22,6 +23,9 @@ sudo ./rploader.sh build bromolow-7.0.1-42218
 
 
 # Source
+
 https://github.com/pocopico/tinycore-redpill
+
 https://github.com/pocopico/rp-ext
+
 https://github.com/jimmyGALLAND/redpill-ext
