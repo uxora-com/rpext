@@ -1,6 +1,7 @@
 # Instruction
 
-To use with tinycore-redpill:
+To compile redpill bootloader with virtio, 9p and acpid.
+Run tinycore-redpill loader on kvm/proxmox with at least 1GB RAM, then type these commands:
 
 ```bash
 
